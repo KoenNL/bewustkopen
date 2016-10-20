@@ -11,100 +11,112 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="keywords" content="">
-        
+
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script type="text/javascript" src="js/carouosel.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
-        <nav id="menu">
-            <div class="logo">
-                <img src="images/logo.png" alt="Logo">
+        <div id="wrapper">
+            <nav id="menu">
+                <div class="menu-item logo">
+                    <a href="index.html" title="Home">
+                        <img src="images/logo.png" alt="Logo" width="50">
+                    </a>
+                </div>
+                <div class="menu-item title"><a href="index.html" title="home"><span class="bewust">Bewust</span> <span class="kopen">Kopen</span></a></div>
+                <div id="nav-buttons">
+                    <div class="menu-item menu-button">
+                        <a class="active" href="index.html" title="Home">Home</a>
+                    </div>
+                    <div class="menu-item menu-button">
+                        <a href="app.html" title="Applicatie">Applicatie</a>
+                    </div>
+                    <div class="menu-item menu-button">
+                        <a href="about.html" title="Over ons">Over Ons</a>
+                    </div>
+                    <div class="menu-item menu-button">
+                        <a href="nutrition.html" title="Voeding">Voeding</a>
+                    </div>
+                    <div class="menu-item menu-button">
+                        <a href="sponsor.html" title="Sponsoren">Sponsoren</a>
+                    </div>
+                    <div class="menu-item menu-button">
+                        <a href="contact.html" title="Contact">Contact</a>
+                    </div>
+                    <div class="menu-item search-box">
+                        
+                        <input type="text" name="search" style="height: 60%; margin: 0 5px;" placeholder="Zoeken...">
+                    </div>
+                    <div class="social-wrapper">
+                        <a class="social-icon" href="https://www.facebook.com/bewustkopen">
+                            <img src="images/facebook.png" alt="Facebook" width="25" height="25">
+                        </a>
+                        <a class="social-icon" href="https://www.twtter.com/bewustkopen">
+                            <img src="images/twitter.png" alt="Twitter" width="25" height="25">
+                        </a>
+                        <a class="social-icon" href="https://www.pinterest.com/bewustkopen">
+                            <img src="images/pinterest.png" alt="Pinterest" width="25" height="25">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div id="photocarousel-wrapper">
+                <div class="photocarousel-photo">
+                    <img src="images/sandwich.jpg" alt="">
+                </div>
+                <div class="photocarousel-photo">
+                    <img src="" alt="">
+                </div>
+                <div class="photocarousel-photo">
+                    <img src="" alt="">
+                </div>
+                <div class="photocarousel-photo">
+                    <img src="" alt="">
+                </div>
             </div>
-            <div class="title"><a href="index.html" title="home">Bewust Kopen</a></div>
-            <div class="menu-button">
-                <a class="active" href="index.html" title="Home">Home</a>
+            <div id="highlights-wrapper">
+                <div class="highlight">
+                    <a class="highlight-image" href="pages/about.html" title="Visie">
+                        <img src="" alt="Visie">
+                    </a>
+                    <p class="highlight-text">
+                        Tekst over visie. <a class="read-more" href="pages/about.html" title="Lees meer">Lees meer...</a>
+                    </p>
+                </div>
+                <div class="highlight">
+                    <a class="highlight-image" href="pages/app.html" title="Applicatie">
+                        <img src="" alt="Applicatie">
+                    </a>
+                    <p class="highlight-text">
+                        Tekst over de applicatie. <a class="read-more" href="pages/app.html" title="Lees meer">Lees meer...</a>
+                    </p>
+                </div>
+                <div class="highlight">
+                    <a class="highlight-image" href="pages/sponsor.html" title="Sponsoren">
+                        <img src="" alt="Sponsoren">
+                    </a>
+                    <p class="highlight-text">
+                        Tekst over sponsoren. <a class="read-more" href="pages/sponsor.html" title="Lees meer">Lees meer...</a>
+                    </p>
+                </div>
             </div>
-            <div class="menu-button">
-                <a href="app.html" title="Applicatie">Applicatie</a>
-            </div>
-            <div class="menu-button">
-                <a href="about.html" title="Over ons">Over Ons</a>
-            </div>
-            <div class="menu-button">
-                <a href="nutrition.html" title="Voeding">Voeding</a>
-            </div>
-            <div class="menu-button">
-                <a href="sponsor.html" title="Sponsoren">Sponsoren</a>
-            </div>
-            <div class="menu-button">
-                <a href="contact.html" title="Contact">Contact</a>
-            </div>
-            <div class="search-box">
-                
-            </div>
-            <div class="social-box">
-                <a class="social-icon social-icon-facebook" href="https://www.facebook.com/bewustkopen"></a>
-            </div>
-            <div class="social-box">
-                <a class="social-icon social-icon-twitter" href="https://www.twtter.com/bewustkopen"></a>
-            </div>
-            <div class="social-box">
-                <a class="social-icon social-icon-pinteres" href="https://www.pinterest.com/bewustkopen"></a>
-            </div>
-        </nav>
-        <div id="photocarousel-wrapper">
-            <div class="photocarousel-photo">
-                <img src="" alt="">
-            </div>
-            <div class="photocarousel-photo">
-                <img src="" alt="">
-            </div>
-            <div class="photocarousel-photo">
-                <img src="" alt="">
-            </div>
-            <div class="photocarousel-photo">
-                <img src="" alt="">
-            </div>
-        </div>
-        <div id="highlights-wrapper">
-            <div class="highlight">
-                <a class="highlight-image" href="pages/about.html" title="Visie">
-                    <img src="" alt="Visie">
-                </a>
-                <p class="highlight-text">
-                    Tekst over visie. <a class="read-more" href="pages/about.html" title="Lees meer">Lees meer...</a>
+            <div id="content">
+                <h1>Homepage</h1>
+                <p>
+                    Dit is de homepage.
                 </p>
             </div>
-            <div class="highlight">
-                <a class="highlight-image" href="pages/app.html" title="Applicatie">
-                    <img src="" alt="Applicatie">
-                </a>
-                <p class="highlight-text">
-                    Tekst over de applicatie. <a class="read-more" href="pages/app.html" title="Lees meer">Lees meer...</a>
-                </p>
-            </div>
-            <div class="highlight">
-                <a class="highlight-image" href="pages/sponsor.html" title="Sponsoren">
-                    <img src="" alt="Sponsoren">
-                </a>
-                <p class="highlight-text">
-                    Tekst over sponsoren. <a class="read-more" href="pages/sponsor.html" title="Lees meer">Lees meer...</a>
-                </p>
-            </div>
-        </div>
-        <div id="content">
-            
         </div>
         <footer>
-            <div id="footer-left">
+            <div class="footer-item">
                 <a href="sitemap.html" title="sitemap">Sitemap</a>
             </div>
-            <div id="footer-center">
-                <p>
-                    Bewust Kopen 2016&copy;
+            <div class="footer-item">
+                <p class="copyright">
+                    Bewust Kopen &copy; 2016
                 </p>
             </div>
-            <div id="footer-right">
+            <div class="footer-item">
                 <p>
                     Bewust Kopen<br>
                     Prins Hendrikstraat 165<br>
@@ -114,5 +126,11 @@ and open the template in the editor.
                 </p>
             </div>
         </footer>
+        <div id="cookie-notice">
+            <p>
+                Deze website maakt gebruikt van cookies. <a href="cookies.html" title="Cookie beleid">Lees meer</a> over waar cookies worden gebruikt. 
+                <button type="button" class="button button-primary" onclick="hide('cookie-notice');">Ik snap het</button>
+            </p>
+        </div>
     </body>
 </html>
