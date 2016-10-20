@@ -1,0 +1,77 @@
+/* 
+    Author     : Bewust Kopen
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+nav#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: inline-block;
+}
+
+.logo, .title, .menu-button {
+    float: left;
+}
+
+.logo img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.menu-button {
+    border: 1px solid #000000;    
+}
+
+.menu-button a {
+    height: 100%;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+#photocarousel-wrapper {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 400px;
+}
+
+#highlight-wrapper {
+    position: absolute;
+    top: 500px;
+    left: 0;
+    right: 0;
+    height: 300px;
+}
+
+#content {
+    position: absolute;
+    top: 800px;
+    left: 0;
+    right: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+}
