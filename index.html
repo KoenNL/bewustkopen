@@ -48,13 +48,13 @@ and open the template in the editor.
                         <input type="text" name="search" style="height: 60%; margin: 0 5px;" placeholder="Zoeken...">
                     </div>
                     <div class="social-wrapper">
-                        <a class="social-icon" href="https://www.facebook.com/bewustkopen">
+                        <a class="social-icon" href="https://www.facebook.com/bewustkopen" target="_blank">
                             <img src="images/facebook.png" alt="Facebook" width="25" height="25">
                         </a>
-                        <a class="social-icon" href="https://www.twtter.com/bewustkopen">
+                        <a class="social-icon" href="https://www.twtter.com/bewustkopen" target="_blank">
                             <img src="images/twitter.png" alt="Twitter" width="25" height="25">
                         </a>
-                        <a class="social-icon" href="https://www.pinterest.com/bewustkopen">
+                        <a class="social-icon" href="https://www.pinterest.com/bewustkopen" target="_blank">
                             <img src="images/pinterest.png" alt="Pinterest" width="25" height="25">
                         </a>
                     </div>
@@ -62,17 +62,17 @@ and open the template in the editor.
                 <div class="menu-button-mobile"></div>
             </nav>
             <div id="photocarousel-wrapper">
-                <div class="photocarousel-photo">
+                <div class="carousel-item">
                     <img src="images/sandwich.jpg" alt="">
                 </div>
-                <div class="photocarousel-photo">
-                    <img src="" alt="">
+                <div class="carousel-item">
+                    <img src="images/smartphone.jpg" alt="">
                 </div>
-                <div class="photocarousel-photo">
-                    <img src="" alt="">
+                <div class="carousel-item">
+                    <img src="images/bananas.jpg" alt="">
                 </div>
-                <div class="photocarousel-photo">
-                    <img src="" alt="">
+                <div class="carousel-item">
+                    <img src="images/basket.jpg" alt="">
                 </div>
             </div>
             <div id="highlights-wrapper">
@@ -130,8 +130,14 @@ and open the template in the editor.
         <div id="cookie-notice">
             <p>
                 Deze website maakt gebruikt van cookies. <a href="cookies.html" title="Cookie beleid">Lees meer</a> over waar cookies worden gebruikt. 
-                <button type="button" class="button button-primary" onclick="hide('cookie-notice');">Ik snap het</button>
+                <button type="button" class="button button-primary" onclick="hide('cookie-notice'); setCookieSetting(1);">Ik snap het</button>
             </p>
         </div>
+        <script type="text/javascript">
+            (function () {
+                var carousel = new Carousel('photocarousel-wrapper');
+                carousel.rotate(5000);
+            })();
+        </script>
     </body>
 </html>
