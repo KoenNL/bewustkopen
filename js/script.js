@@ -1,13 +1,36 @@
+/**
+ * Hide the given element.
+ * @param {string} id Id of the element to hide.
+ * @returns {Boolean} true on success.
+ */
 function hide(id) {
     var element = document.getElementById(id);
     element.style.display = 'none';
     return true;
 }
 
+/**
+ * Show the given element.
+ * @param {string} id Id of the element to show.
+ * @returns {Boolean} true on success.
+ */
 function show(id) {
     var element = document.getElementById(id);
     element.style.display = 'block';
     return true;
+}
+
+/**
+ * Hide or show the given element, depending on it's current visibility.
+ * @param {string} id Id of the element to toggle.
+ * @returns {Boolean} true on success.
+ */
+function toggle(id) {
+    var style = window.getComputedStyle(document.getElementById(id));
+    if (style.display === 'none') {
+        return show(id);
+    }
+    return hide(id);
 }
 
 function checkCookieSetting() {
@@ -28,16 +51,6 @@ function checkCookieSetting() {
 
 function setCookieSetting(setting) {
     document.cookie = 'accept_cookies=' + setting;
-}
-
-function addClass(element, name) {
-    element.className += ' ' + name;
-    return true;
-}
-
-function removeClass(element, name) {
-    element.className = element.className.replace('name', '');
-    return true;
 }
 
 /**
