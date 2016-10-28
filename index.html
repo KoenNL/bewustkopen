@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="nl">
     <head>
         <title>Bewust Kopen</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="Bewust Kopen is een organisatie die graag wil helpen bij het verduidelijke van producten voor vegetariërs en veganisten.">
+        <meta name="keywords" content="bewust kopen, vegetariër, veganist, app, applicatie, producten, voeding, ingredinten">
+        <meta name="author" content="Freek de Groen, Stephanie van der Heijden, Koen Kukken">
 
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript" src="js/script.js"></script>
@@ -44,10 +40,9 @@ and open the template in the editor.
                         <a href="contact.html" title="Contact">Contact</a>
                     </div>
                     <div class="menu-item search-box">
-
                         <input type="text" name="search" style="height: 60%; margin: 0 5px;" placeholder="Zoeken...">
                     </div>
-                    <div class="social-wrapper">
+                    <div id="social-wrapper">
                         <a class="social-icon" href="https://www.facebook.com/bewustkopen" target="_blank">
                             <img src="images/facebook.png" alt="Facebook" width="25" height="25">
                         </a>
@@ -59,7 +54,7 @@ and open the template in the editor.
                         </a>
                     </div>
                 </div>
-                <div class="menu-button-mobile"></div>
+                <div class="menu-button-mobile" onclick="toggle('nav-buttons');"></div>
             </nav>
             <div id="photocarousel-wrapper">
                 <div class="carousel-item">
@@ -77,27 +72,42 @@ and open the template in the editor.
             </div>
             <div id="highlights-wrapper">
                 <div class="highlight">
-                    <a class="highlight-image" href="pages/about.html" title="Visie">
-                        <img src="" alt="Visie">
+                    <div class="highlight-image">
+                        <a href="pages/about.html" title="Visie">
+                            <img src="images/logo.png" alt="Visie">
+                        </a>
+                    </div>
+                    <a class="highlight-title" href="about.html" title="Visie">
+                        <h2 class="brand-primary">Visie</h2>
                     </a>
                     <p class="highlight-text">
-                        Tekst over visie. <a class="read-more" href="pages/about.html" title="Lees meer">Lees meer...</a>
+                        <a class="read-more" href="about.html" title="Lees meer">Lees meer...</a>
                     </p>
                 </div>
                 <div class="highlight">
-                    <a class="highlight-image" href="pages/app.html" title="Applicatie">
-                        <img src="" alt="Applicatie">
+                    <div class="highlight-image">
+                        <a href="pages/app.html" title="Applicatie">
+                            <img src="images/logo.png" alt="Applicatie">
+                        </a>
+                    </div>
+                    <a class="highlight-title" href="app.html" title="Applicatie">
+                        <h2 class="brand-primary">Applicatie</h2>
                     </a>
                     <p class="highlight-text">
-                        Tekst over de applicatie. <a class="read-more" href="pages/app.html" title="Lees meer">Lees meer...</a>
+                        Sta jij je ook wel eens af te vragen wat er in de producten zit die je in de winkel koopt? De Bewust Kopen app helpt je met het ontcijferen van de ingrediëntenlijst. <a class="read-more" href="app.html" title="Lees meer">Lees meer...</a>
                     </p>
                 </div>
                 <div class="highlight">
-                    <a class="highlight-image" href="pages/sponsor.html" title="Sponsoren">
-                        <img src="" alt="Sponsoren">
+                    <div class="highlight-image">
+                        <a href="pages/sponsor.html" title="Sponsoren">
+                            <img src="images/logo.png" alt="Sponsoren">
+                        </a>
+                    </div>
+                    <a class="highlight-title" href="sponsors.html" title="Sponsoren">
+                        <h2 class="brand-primary">Sponsoren</h2>
                     </a>
                     <p class="highlight-text">
-                        Tekst over sponsoren. <a class="read-more" href="pages/sponsor.html" title="Lees meer">Lees meer...</a>
+                        Wij zijn niets zonder onze sponsoren. Wil je weten welke bedrijven achter ons staan, of past jouw bedrijf bij onze visie? <a class="read-more" href="pages/sponsor.html" title="Lees meer">Lees dan snel meer...</a>
                     </p>
                 </div>
             </div>
