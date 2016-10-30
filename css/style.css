@@ -262,6 +262,12 @@ nav#menu {
     color: #F45F0A;
 }
 
+#utilities {
+    float: left;
+    width: 100%;
+    padding: 10px 40px;
+}
+
 footer {
     float: left;
     width: 100%;
@@ -326,7 +332,7 @@ footer {
 
 .button-default:hover {
     background-color: #DDDDDD;
-    border-color: #000000;
+    border-color: #666666;
 }
 
 .button-primary {
@@ -337,6 +343,10 @@ footer {
 .button-primary:hover {
     background-color: #EFBF04;
     border-color: #000000;
+}
+
+.print-button {
+    float: right;
 }
 
 @media (max-width: 1330px) {
@@ -414,5 +424,19 @@ footer {
 @media (max-width: 500px) {
     .title {
         font-size: 30pt;
+    }
+}
+
+@media print {
+    .menu-item, #social-wrapper, #title-bar, footer, #utilities, #cookie-notice {
+        display: none;
+    }
+    
+    nav#menu {
+        box-shadow: none;
+    }
+    
+    #content, .title, .logo {
+        display: block;
     }
 }
