@@ -253,13 +253,17 @@ nav#menu {
     box-shadow: 0 1px 5px #000000;
 }
 
-#content a {
+#content a, .highlight a {
     color: #075503;
     white-space: nowrap;
 }
 
-#content a:hover {
+#content a:hover, .highlight a:hover {
     color: #F45F0A;
+}
+
+#content h1, #content h2, #content h3, #content h4 {
+    margin-top: 30px;
 }
 
 #utilities {
@@ -309,6 +313,11 @@ footer {
 
 #cookie-notice p, #cookie-notice a {
     color: #FFFFFF;
+}
+
+.read-more {
+    font-style: italic;
+    color: #666666;
 }
 
 .button {
