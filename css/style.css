@@ -337,17 +337,6 @@ footer {
     #photocarousel-wrapper {
         display: none;
     }
-}
-#team ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  
-}
-#team li {
-  display: inline-block;
-  margin: 50px;
-    }
 
     #nav-buttons {
         display: none;
@@ -392,7 +381,7 @@ footer {
     .social-icon {
         margin: 0 10px;
     }
-
+}
 
 @media (max-width: 700px) {
     .highlight {
@@ -409,3 +398,14 @@ footer {
         font-size: 30pt;
     }
 }
+
+#team ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+#team li {
+  display: inline-block;
+  margin: 50px;
+    }
