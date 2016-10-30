@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    <url> 
+        <loc>http://www.bewustkopen.com</loc>
+        <image:image>
+            <image:loc>http://www.bewustkopen.com/images/sandwich.jpg</image:loc>
+            <image:caption>Een sandwich</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://www.bewustkopen.com/images/bananas.jpg</image:loc>
+            <image:caption>Bananen in de supermarkt</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://www.bewustkopen.com/images/smartphone.jpg</image:loc>
+            <image:caption>Smartphone in gebruik</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://www.bewustkopen.com/images/basket.jpg</image:loc>
+            <image:caption>Een boodschappenmandje vol met groenten.</image:caption>
+        </image:image>
+    </url>
+    <url> 
+        <loc>http://www.bewustkopen.com/applicatie</loc>
+        <image:image>
+            <image:loc>http://www.bewustkopen.com/images/screenshot1.jpg</image:loc>
+            <image:caption>Een screenshot van de homepagina van de Bewust Kopen app</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://www.bewustkopen.com/images/screenshot2.jps</image:loc>
+            <image:caption>Een screenshot van een opgezocht product in de Bewust Kopen app</image:caption>
+        </image:image>
+    </url>
+    <url> 
+        <loc>http://www.bewustkopen.com/over_ons</loc>
+        <image:image>
+            <image:loc>http://www.bewustkopen.com/images/freek.jpg</image:loc>
+            <image:caption>Een foto van medeoprichter Freek de Groen</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://www.bewustkopen.com/images/stephanie.jpg</image:loc>
+            <image:caption>Een foto van medeoprichter Stephanie van er Heijden</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://www.bewustkopen.com/images/koen.jpg</image:loc>
+            <image:caption>Een foto van medeoprichter Koen Kukken</image:caption>
+        </image:image>
+    </url>
+    <url> 
+        <loc>http://www.bewustkopen.com/voeding</loc>
+        <image:image>
+            <image:loc>http://www.bewustkopen.com/images/vegetables.jpg</image:loc>
+            <image:caption>Een verzamling groenten</image:caption>
+        </image:image>
+    </url>
+    <url> 
+        <loc>http://www.bewustkopen.com/sponsoren</loc>
+    </url>
+    <url> 
+        <loc>http://www.bewustkopen.com/contact</loc>
+    </url>
+    <url> 
+        <loc>http://www.bewustkopen.com/zoeken</loc>
+    </url>
+</urlset>
