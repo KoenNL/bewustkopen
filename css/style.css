@@ -62,17 +62,17 @@ a {
 }
 
 nav#menu {
-float: left;
-width: 100%;
+    float: left;
+    width: 100%;
     height: 75px;
     display: inline-block;
     box-shadow: 0 1px 5px #000000;
-    z-index: 100;
 }
 
 #nav-buttons {
     float: right;
     height: 100%;
+    z-index: 100;
 }
 
 .logo, .title, .menu-item {
@@ -82,8 +82,8 @@ width: 100%;
 .logo {
     display: flex;
     width: 75px;
-    height: 75px;
-    background-color: #FFFFFF;
+    height: 45px;
+    margin: 15px;
 }
 
 .logo a {
@@ -127,6 +127,7 @@ width: 100%;
 .menu-button {
     border-left: 1px solid #999999;
     background-color: #C5F4A0;
+    text-align: center;
 }
 
 .menu-button:hover {
@@ -152,7 +153,7 @@ width: 100%;
     border-left: 1px solid #999999;
 }
 
-.social-wrapper {
+#social-wrapper {
     float: left;
     height: 75px;
     padding: 0 10px;
@@ -186,16 +187,31 @@ width: 100%;
 }
 
 #photocarousel-wrapper {
+    position: relative;
     float: left;
     width: 100%;
     height: 400px;
     overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    z-index: -100;
+}
+
+.carousel-item {
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.carousel-item:first-child {
+    left: 0;
 }
 
 #highlights-wrapper {
     float: left;
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     box-shadow: 0 1px 5px #000000;
     z-index: 100;
 }
@@ -207,6 +223,21 @@ width: 100%;
     text-align: center;
 }
 
+.highlight-image {
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.highlight-title {
+    text-decoration: none;
+}
+
+.highlight-text {
+    margin: 10px auto;
+    padding: 10px 15%;
+}
+
 #content {
     float: left;
     width: 100%;
@@ -216,7 +247,7 @@ width: 100%;
 footer {
     float: left;
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     background-color: #075503;
     color: #FFFFFF;
 }
@@ -249,6 +280,7 @@ footer {
     padding: 10px 0;
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
+    z-index: 200;
 }
 
 #cookie-notice p, #cookie-notice a {
@@ -256,12 +288,13 @@ footer {
 }
 
 .button {
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 5px;
     background-color: #FFFFFF;
     border: 1px solid;
     box-shadow: 1px 1px 2px #000000;
     cursor: pointer;
+    font-size: 10pt;
 }
 
 .button:hover {
@@ -288,23 +321,84 @@ footer {
     border-color: #000000;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1330px) {
     .search-box {
         display: none;
     }
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1200px) {
     .menu-button a {
         padding: 10px;
     }
 }
 
-@media (max-width: 920px) {
-    .title {
+@media (max-width: 950px) { 
+    #photocarousel-wrapper {
         display: none;
     }
+
+    #nav-buttons {
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 200px;
+        margin-top: 75px;
+    }
+
+    .menu-button {
+        width: 100%;
+    }
+
+    .search-box {
+        display: block;
+        height: 75px;
+        width: 100%;
+        background-color: #C5F4A0;
+        text-align: center;
+    }
+
+    .search-box input {
+        width: 80%;
+    }
+
+    .menu-button-mobile {
+        float: right;
+        margin: 15px 15px;
+        display: block;
+        background: url(../images/menu.png) no-repeat;
+        background-size: 40px 40px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    #social-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icon {
+        margin: 0 10px;
+    }
 }
+
+@media (max-width: 700px) {
+    .highlight {
+        width: 100%;
+    }
+
+    .footer-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 30pt;
+    }
+}
+
 #team ul {
   list-style: none;
   margin: 0;
