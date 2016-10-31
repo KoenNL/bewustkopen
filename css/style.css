@@ -398,3 +398,14 @@ footer {
         font-size: 30pt;
     }
 }
+
+#team ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+#team li {
+  display: inline-block;
+  margin: 50px;
+    }
