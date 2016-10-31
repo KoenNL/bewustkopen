@@ -436,6 +436,16 @@ footer {
     }
 }
 
+#team ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+#team li {
+  display: inline-block;
+  margin: 50px;
+    }
 @media print {
     .menu-item, #social-wrapper, #title-bar, footer, #utilities, #cookie-notice {
         display: none;
