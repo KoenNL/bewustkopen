@@ -213,6 +213,10 @@ width: 100%;
     padding: 40px;
 }
 
+#content ul li {
+    margin-left: 20px;
+}
+
 footer {
     float: left;
     width: 100%;
