@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="nl">
     <head>
         <title>Bewust Kopen | Over ons</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
         <meta name="description" content="">
         <meta name="keywords" content="">
 
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript" src="js/script.js"></script>
     </head>
@@ -19,51 +16,55 @@ and open the template in the editor.
         <div id="wrapper">
             <nav id="menu">
                 <div class="menu-item logo">
-                    <a href="index.html" title="Home">
+                    <a href="/" title="Home">
                         <img src="images/logo.png" alt="Logo" width="50">
                     </a>
                 </div>
-                <div class="menu-item title"><a href="index.html" title="home"><span class="brand-primary">Bewust</span> <span class="brand-secondary">Kopen</span></a></div>
+                <div class="menu-item title"><a href="/" title="home"><span class="brand-primary">Bewust</span> <span class="brand-secondary">Kopen</span></a></div>
                 <div id="nav-buttons">
                     <div class="menu-item menu-button">
-                        <a href="index.html" title="Home">Home</a>
+                        <a href="/" title="Home">Home</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="app.html" title="Applicatie">Applicatie</a>
+                        <a href="/applicatie" title="Applicatie">Applicatie</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a class="active" href="about.html" title="Over ons">Over Ons</a>
+                        <a class="active" href="/over" title="Over ons">Over Ons</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="nutrition.html" title="Voeding">Voeding</a>
+                        <a href="/voeding" title="Voeding">Voeding</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="sponsor.html" title="Sponsoren">Sponsoren</a>
+                        <a href="/sponsors" title="Sponsors">Sponsors</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="contact.html" title="Contact">Contact</a>
+                        <a href="/contact" title="Contact">Contact</a>
                     </div>
                     <div class="menu-item search-box">
-
                         <input type="text" name="search" style="height: 60%; margin: 0 5px;" placeholder="Zoeken...">
                     </div>
-                    <div class="social-wrapper">
-                        <a class="social-icon" href="https://www.facebook.com/bewustkopen">
+                    <div id="social-wrapper">
+                        <a class="social-icon" href="https://www.facebook.com/bewustkopen" target="_blank">
                             <img src="images/facebook.png" alt="Facebook" width="25" height="25">
                         </a>
-                        <a class="social-icon" href="https://www.twtter.com/bewustkopen">
+                        <a class="social-icon" href="https://www.twtter.com/bewustkopen" target="_blank">
                             <img src="images/twitter.png" alt="Twitter" width="25" height="25">
                         </a>
-                        <a class="social-icon" href="https://www.pinterest.com/bewustkopen">
+                        <a class="social-icon" href="https://www.pinterest.com/bewustkopen" target="_blank">
                             <img src="images/pinterest.png" alt="Pinterest" width="25" height="25">
                         </a>
                     </div>
                 </div>
-                <div class="menu-button-mobile"></div>
+                <div class="menu-button-mobile" onclick="toggle('nav-buttons');"></div>
             </nav>
             <div id="title-bar">
-                <h1 class="title">Over ons</h1>
-                <div class="breadcrumb"><a href="index.html" title="home">Home</a>-&gt;<a href="about.html" title="Over ons">Over ons</a></div>
+                <div class="title-item">
+                    <h2 class="title">Over ons</h2>
+                </div>
+                <div class="title-item">
+                    <p class="breadcrumb"><a href="/" title="Home">Home</a>-&gt;<a href="/over" title="Over ons">Over ons</a></p>
+                </div>
+                <button type="button" class="button button-default print-button" onclick="window.print();">Print</button>
             </div>
             <div id="content">
                 <h1>Over Bewust Kopen</h1>
@@ -89,10 +90,13 @@ and open the template in the editor.
                                 <h4>Freek de Groen</h4> </li></ul>
                 </div>
             </div>           
-            
             <footer>
                 <div class="footer-item">
-                    <a href="sitemap.html" title="sitemap">Sitemap</a>
+                    <ul>
+                        <li><a href="sitemap.html" title="Sitemap">Sitemap</a></li>
+                        <li><a href="/cookies" title="Cookies">Cookies</a></li>
+                        <li><a href="#" title="Print" onclick="window.print();">Deze pagina printen</a></li>
+                    </ul>
                 </div>
                 <div class="footer-item">
                     <p class="copyright">
@@ -112,7 +116,7 @@ and open the template in the editor.
         </div>
         <div id="cookie-notice">
             <p>
-                Deze website maakt gebruikt van cookies. <a href="cookies.html" title="Cookie beleid">Lees meer</a> over waar cookies worden gebruikt. 
+                Deze website maakt gebruikt van cookies. <a href="/cookies" title="Cookie beleid">Lees meer</a> over waar cookies worden gebruikt. 
                 <button type="button" class="button button-primary" onclick="hide('cookie-notice');">Ik snap het</button>
             </p>
         </div>

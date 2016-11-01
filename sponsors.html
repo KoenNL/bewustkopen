@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="nl">
     <head>
-        <title>Bewust Kopen | Applicatie</title>
+        <title>Bewust Kopen | Sponsors</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
         <meta name="description" content="">
         <meta name="keywords" content="">
 
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript" src="js/script.js"></script>
     </head>
@@ -19,34 +16,34 @@ and open the template in the editor.
         <div id="wrapper">
             <nav id="menu">
                 <div class="menu-item logo">
-                    <a href="index.html" title="Home">
+                    <a href="/" title="Home">
                         <img src="images/logo.png" alt="Logo" width="50">
                     </a>
                 </div>
-                <div class="menu-item title"><a href="index.html" title="home"><span class="brand-primary">Bewust</span> <span class="brand-secondary">Kopen</span></a></div>
+                <div class="menu-item title"><a href="/" title="home"><span class="brand-primary">Bewust</span> <span class="brand-secondary">Kopen</span></a></div>
                 <div id="nav-buttons">
                     <div class="menu-item menu-button">
-                        <a href="index.html" title="Home">Home</a>
+                        <a href="/" title="Home">Home</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a class="active" href="app.html" title="Applicatie">Applicatie</a>
+                        <a href="/applicatie" title="Applicatie">Applicatie</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="about.html" title="Over ons">Over Ons</a>
+                        <a href="/over" title="Over ons">Over Ons</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="voeding.html" title="Voeding">Voeding</a>
+                        <a href="/voeding" title="Voeding">Voeding</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="sponsor.html" title="Sponsoren">Sponsoren</a>
+                        <a class="active" href="/sponsors" title="Sponsors">Sponsors</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="contact.html" title="Contact">Contact</a>
+                        <a href="/contact" title="Contact">Contact</a>
                     </div>
                     <div class="menu-item search-box">
                         <input type="text" name="search" style="height: 60%; margin: 0 5px;" placeholder="Zoeken...">
                     </div>
-                    <div class="social-wrapper">
+                    <div id="social-wrapper">
                         <a class="social-icon" href="https://www.facebook.com/bewustkopen" target="_blank">
                             <img src="images/facebook.png" alt="Facebook" width="25" height="25">
                         </a>
@@ -58,38 +55,39 @@ and open the template in the editor.
                         </a>
                     </div>
                 </div>
-                <div class="menu-button-mobile"></div>
+                <div class="menu-button-mobile" onclick="toggle('nav-buttons');"></div>
             </nav>
             <div id="title-bar">
-                <h1 class="title">Applicatie</h1>
-                <div class="breadcrumb"><a href="index.html" title="home">Home</a>-&gt;<a href="app.html" title="Applicatie">Applicatie</a></div>
+                <div class="title-item">
+                    <h2 class="title">Sponsors</h2>
+                </div>
+                <div class="title-item">
+                    <p class="breadcrumb"><a href="/" title="Home">Home</a>-&gt;<a href="/sponsors" title="Sponsors">Sponsors</a></p>
+                </div>
+                <button type="button" class="button button-default print-button" onclick="window.print();">Print</button>
             </div>
             <div id="content">
-                <h2>Applicatie voor vegetariers</h2>
-                <hr>
-                <br>
                 <p>
-                    Men is vandaag de dag steeds meer bezig met bewuste keuzes maken als het gaat om voeding. Bewust kopen vind het belangrijk dat het eenvoudig word om echt te weten wat er nu in de producten zit. Of deze voldoen aan je eetpatroon en of deze eigenlijk wel voldoen aan wat het label vermeld.
-
-                    Door middel van deze applicatie kunnen producten ingescand worden. Er wordt getoond welke ingredienten er daadwerkelijk in de producten zit.
-                </p>
+                    Om een zo breed mogelijk publiek te bereiken is samenwerking van groot belang voor Bewust Kopen. Samenwerking kan op verschillende manieren. We onderscheiden dit in twee groepen.</p>
                 <br>
-                <h4>
-                    2 screenshots van de applicatie:
-                </h4>
-                <p>
-                    Op onderstaande pagina wordt het beginscherm getoond. Hier kun je kiezen uit verschillende productgroepen.
-                </p>    
-                 <p>
-                    Op onderstaande screenshot wordt een pagina in de applicatie weergegeven. 
-                </p>
-                <img src="images/screenshot1.png" alt="screenshot1" width="339" height="478" align='left'>
-               
-                <img src="images/screenshot2.png" alt="screenshot2" width="339" height="478" align='center'>
+                <h4>Strategische partners:</h4>
+                <p>Hieronder verstaan we ondersteuning waar geen of beperkte financiele vergoeding aan gekoppeld is.</p>
+                <h4>Sponsors:</h4>
+                <p>Sponsors bieden financiele steun aan het bedrijf om verder te kunnen ontwikkelen.</p>
+                
+                <p>Op dit moment is onze grootste partner de <a href="https://www.vegetariers.nl/" title=vegetariersbond>vegetariersbond</a>. Zij zijn zowel strategisch partner alswel sponsor.</p>
+                <br>
+                <h4>Zelf sponsor of strategisch partner worden?</h4>
+                <p>Wij zijn altijd op zoek naar nieuwe samenwerkingen. DUs mocht u interesse hebben dan horen we dat graag van u. U kunt contact met ons opnemen per <a href="mailto:info@bewustkopen.nl" title="E-mail ons">mail</a> of <a href="/contact" title="Contact">telefoon</a>.</p>
+                <br>
             </div>
             <footer>
                 <div class="footer-item">
-                    <a href="sitemap.html" title="sitemap">Sitemap</a>
+                    <ul>
+                        <li><a href="sitemap.html" title="Sitemap">Sitemap</a></li>
+                        <li><a href="/cookies" title="Cookies">Cookies</a></li>
+                        <li><a href="#" title="Print" onclick="window.print();">Deze pagina printen</a></li>
+                    </ul>
                 </div>
                 <div class="footer-item">
                     <p class="copyright">
@@ -109,7 +107,7 @@ and open the template in the editor.
         </div>
         <div id="cookie-notice">
             <p>
-                Deze website maakt gebruikt van cookies. <a href="cookies.html" title="Cookie beleid">Lees meer</a> over waar cookies worden gebruikt. 
+                Deze website maakt gebruikt van cookies. <a href="/cookies" title="Cookie beleid">Lees meer</a> over waar cookies worden gebruikt. 
                 <button type="button" class="button button-primary" onclick="hide('cookie-notice');">Ik snap het</button>
             </p>
         </div>
