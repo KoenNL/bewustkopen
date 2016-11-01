@@ -287,6 +287,10 @@ nav#menu {
     margin: 50px;
 }
 
+#content ul li {
+    margin-left: 20px;
+}
+
 footer {
     float: left;
     width: 100%;
