@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="nl">
     <head>
-        <title>Bewust Kopen | Applicatie</title>
+        <title>Bewust Kopen | Cookies</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="robots" content="noindex nofollow">
+        <meta name="keywords" content="T&euml;st">
+        <meta name="author" content="Freek de Groen, Stephanie van der Heijden, Koen Kukken">
 
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript" src="js/script.js"></script>
@@ -23,19 +19,24 @@ and open the template in the editor.
                         <img src="images/logo.png" alt="Logo" width="50">
                     </a>
                 </div>
-                <div class="menu-item title"><a href="index.html" title="home"><span class="brand-primary">Bewust</span> <span class="brand-secondary">Kopen</span></a></div>
+                <div class="menu-item title">
+                    <a href="index.html" title="home"><span class="brand-primary">Bewust</span> <span class="brand-secondary">Kopen</span></a>
+                </div>
+                <div class="menu-item title-mobile">
+                    <h2>Cookies</h2>
+                </div>
                 <div id="nav-buttons">
                     <div class="menu-item menu-button">
                         <a href="index.html" title="Home">Home</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a class="active" href="app.html" title="Applicatie">Applicatie</a>
+                        <a href="app.html" title="Applicatie">Applicatie</a>
                     </div>
                     <div class="menu-item menu-button">
                         <a href="about.html" title="Over ons">Over Ons</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="voeding.html" title="Voeding">Voeding</a>
+                        <a href="nutrition.html" title="Voeding">Voeding</a>
                     </div>
                     <div class="menu-item menu-button">
                         <a href="sponsor.html" title="Sponsoren">Sponsoren</a>
@@ -46,7 +47,7 @@ and open the template in the editor.
                     <div class="menu-item search-box">
                         <input type="text" name="search" style="height: 60%; margin: 0 5px;" placeholder="Zoeken...">
                     </div>
-                    <div class="social-wrapper">
+                    <div id="social-wrapper">
                         <a class="social-icon" href="https://www.facebook.com/bewustkopen" target="_blank">
                             <img src="images/facebook.png" alt="Facebook" width="25" height="25">
                         </a>
@@ -58,34 +59,29 @@ and open the template in the editor.
                         </a>
                     </div>
                 </div>
-                <div class="menu-button-mobile"></div>
+                <div class="menu-button-mobile" onclick="toggle('nav-buttons');"></div>
             </nav>
             <div id="title-bar">
-                <h1 class="title">Applicatie</h1>
-                <div class="breadcrumb"><a href="index.html" title="home">Home</a>-&gt;<a href="app.html" title="Applicatie">Applicatie</a></div>
+                <div class="title-item">
+                    <h2 class="title">Cookies</h2>
+                </div>
+                <div class="title-item">
+                    <p class="breadcrumb"><a href="index.html" title="Home">Home</a>-&gt;<a href="cookies.html" title="Cookies">Cookies</a></p>
+                </div>
+                <button type="button" class="button button-default print-button" onclick="window.print();">Print</button>
             </div>
             <div id="content">
-                <h2>Applicatie voor vegetariers</h2>
-                <hr>
-                <br>
+                <img src="images/cookies.jpg" alt="Cookies" width="400" height="300" align="right">
+                <h2>Bezoekersgedrag</h2>
                 <p>
-                    Men is vandaag de dag steeds meer bezig met bewuste keuzes maken als het gaat om voeding. Bewust kopen vind het belangrijk dat het eenvoudig word om echt te weten wat er nu in de producten zit. Of deze voldoen aan je eetpatroon en of deze eigenlijk wel voldoen aan wat het label vermeld.
-
-                    Door middel van deze applicatie kunnen producten ingescand worden. Er wordt getoond welke ingredienten er daadwerkelijk in de producten zit.
+                    Bewust Kopen maakt gebruik van cookies om de bezoekersaantallen en het bezoekersgedrag op de site te kunnen meten. Dit wordt gedaan met <a href="https://analytics.google.com/analytics/web" title="Google Analytics">Google Analytics</a>. Deze gegevens worden verzameld om te analyseren hoe bezoekers door de website navigeren en hoe lang ze op bepaalde pagina's blijven. Dit wordt gedaan om de ervaring voor de bezoeker in het vervolg te kunnen verbeteren.<br>
+                    De opgeslagen gegevens worden alleen door Bewust Kopen geraadpleegd en niet aan derden verstrekt.
                 </p>
-                <br>
-                <h4>
-                    2 screenshots van de applicatie:
-                </h4>
+                <h2>Kaarten</h2>
                 <p>
-                    Op onderstaande pagina wordt het beginscherm getoond. Hier kun je kiezen uit verschillende productgroepen.
-                </p>    
-                 <p>
-                    Op onderstaande screenshot wordt een pagina in de applicatie weergegeven. 
+                    Voor het weergeven van de kaart op de <a href="contact.html" title="Contact">contact</a> pagina maakt Bewust Kopen gebruikt van <a href="https://www.google.nl/maps" title="Google Maps">Google Maps</a>. Om deze kaart te kunnen gebruiken plaatst Google een cookie.<br>
+                    De gegevens kunnen worden gebruikt door Google en indien ingelog met een Google account worden deze mogelijk ook gekoppeld.
                 </p>
-                <img src="images/screenshot1.png" alt="screenshot1" width="339" height="478" align='left'>
-               
-                <img src="images/screenshot2.png" alt="screenshot2" width="339" height="478" align='center'>
             </div>
             <footer>
                 <div class="footer-item">
@@ -102,7 +98,7 @@ and open the template in the editor.
                         Prins Hendrikstraat 165<br>
                         4835PN, Breda<br>
                         06-12345678<br>
-                        <a href="mailto:info@bewustkopen.nl" title="E-mail ons">info@bewustkopen.nl</a><br>
+                        <a href="mailto:info@bewustkopen.com" title="E-mail ons">info@bewustkopen.com</a><br>
                     </p>
                 </div>
             </footer>
@@ -110,7 +106,7 @@ and open the template in the editor.
         <div id="cookie-notice">
             <p>
                 Deze website maakt gebruikt van cookies. <a href="cookies.html" title="Cookie beleid">Lees meer</a> over waar cookies worden gebruikt. 
-                <button type="button" class="button button-primary" onclick="hide('cookie-notice');">Ik snap het</button>
+                <button type="button" class="button button-primary" onclick="hide('cookie-notice'); setCookieSetting(1);">Ik snap het</button>
             </p>
         </div>
     </body>

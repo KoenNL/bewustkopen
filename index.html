@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="nl">
     <head>
         <title>Bewust Kopen</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="Bewust Kopen is een organisatie die graag wil helpen bij het verduidelijke van producten voor vegetariërs en veganisten.">
+        <meta name="keywords" content="bewust kopen, vegetariër, veganist, app, applicatie, producten, voeding, ingredinten">
+        <meta name="author" content="Freek de Groen, Stephanie van der Heijden, Koen Kukken">
 
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript" src="js/script.js"></script>
@@ -44,72 +40,98 @@ and open the template in the editor.
                         <a href="contact.html" title="Contact">Contact</a>
                     </div>
                     <div class="menu-item search-box">
-
                         <input type="text" name="search" style="height: 60%; margin: 0 5px;" placeholder="Zoeken...">
                     </div>
-                    <div class="social-wrapper">
-                        <a class="social-icon" href="https://www.facebook.com/bewustkopen">
+                    <div id="social-wrapper">
+                        <a class="social-icon" href="https://www.facebook.com/bewustkopen" target="_blank">
                             <img src="images/facebook.png" alt="Facebook" width="25" height="25">
                         </a>
-                        <a class="social-icon" href="https://www.twtter.com/bewustkopen">
+                        <a class="social-icon" href="https://www.twtter.com/bewustkopen" target="_blank">
                             <img src="images/twitter.png" alt="Twitter" width="25" height="25">
                         </a>
-                        <a class="social-icon" href="https://www.pinterest.com/bewustkopen">
+                        <a class="social-icon" href="https://www.pinterest.com/bewustkopen" target="_blank">
                             <img src="images/pinterest.png" alt="Pinterest" width="25" height="25">
                         </a>
                     </div>
                 </div>
-                <div class="menu-button-mobile"></div>
+                <div class="menu-button-mobile" onclick="toggle('nav-buttons');"></div>
             </nav>
             <div id="photocarousel-wrapper">
-                <div class="photocarousel-photo">
+                <div class="carousel-item">
                     <img src="images/sandwich.jpg" alt="">
                 </div>
-                <div class="photocarousel-photo">
-                    <img src="" alt="">
+                <div class="carousel-item">
+                    <img src="images/smartphone.jpg" alt="">
                 </div>
-                <div class="photocarousel-photo">
-                    <img src="" alt="">
+                <div class="carousel-item">
+                    <img src="images/bananas.jpg" alt="">
                 </div>
-                <div class="photocarousel-photo">
-                    <img src="" alt="">
+                <div class="carousel-item">
+                    <img src="images/basket.jpg" alt="">
                 </div>
             </div>
             <div id="highlights-wrapper">
                 <div class="highlight">
-                    <a class="highlight-image" href="pages/about.html" title="Visie">
-                        <img src="" alt="Visie">
+                    <div class="highlight-image">
+                        <a href="pages/about.html" title="Visie">
+                            <img src="images/vision.png" alt="Visie" width="100" height="100">
+                        </a>
+                    </div>
+                    <a class="highlight-title" href="about.html" title="Visie">
+                        <h2>Visie</h2>
                     </a>
                     <p class="highlight-text">
-                        Tekst over visie. <a class="read-more" href="pages/about.html" title="Lees meer">Lees meer...</a>
+                        Bewust Kopen is er om te verduidelijken wat er allemaal in producten zit zodat je weet wat je in je lichaam stopt.
+                        <a class="read-more" href="about.html" title="Lees meer">Lees meer...</a>
                     </p>
                 </div>
                 <div class="highlight">
-                    <a class="highlight-image" href="pages/app.html" title="Applicatie">
-                        <img src="" alt="Applicatie">
+                    <div class="highlight-image">
+                        <a href="pages/app.html" title="Applicatie">
+                            <img src="images/logo.png" alt="Applicatie" width="100" height="100">
+                        </a>
+                    </div>
+                    <a class="highlight-title" href="app.html" title="Applicatie">
+                        <h2>Applicatie</h2>
                     </a>
                     <p class="highlight-text">
-                        Tekst over de applicatie. <a class="read-more" href="pages/app.html" title="Lees meer">Lees meer...</a>
+                        Sta jij je ook wel eens af te vragen wat er in de producten zit die je in de winkel koopt? De Bewust Kopen app helpt je met het ontcijferen van de ingrediëntenlijst. <a class="read-more" href="app.html" title="Lees meer">Lees meer...</a>
                     </p>
                 </div>
                 <div class="highlight">
-                    <a class="highlight-image" href="pages/sponsor.html" title="Sponsoren">
-                        <img src="" alt="Sponsoren">
+                    <div class="highlight-image">
+                        <a href="pages/sponsor.html" title="Sponsoren">
+                            <img src="images/sponsor.png" alt="Sponsoren" width="100" height="100">
+                        </a>
+                    </div>
+                    <a class="highlight-title" href="sponsors.html" title="Sponsoren">
+                        <h2>Sponsoren</h2>
                     </a>
                     <p class="highlight-text">
-                        Tekst over sponsoren. <a class="read-more" href="pages/sponsor.html" title="Lees meer">Lees meer...</a>
+                        Dankzij onze sponsors kunnen wij doen wat we nu doen. Wil je weten welke bedrijven achter ons staan, of past jouw bedrijf bij onze visie? <a class="read-more" href="pages/sponsor.html" title="Lees meer">Lees dan snel meer...</a>
                     </p>
                 </div>
             </div>
             <div id="content">
-                <h1>Homepage</h1>
+                <h2>Voedingspatronen</h2>
                 <p>
-                    Dit is de homepage.
+                    Iedereen heeft zijn eigen voedingspatroon. Soms kun je wel wat hulp gebruiken bij het zoeken van de juiste producten. Voor vegetariërs en veganisten zijn er soms een aantal &quot;instinkers&quot; als het gaat om ingrediënten in bepaalde producten.
                 </p>
+                <h2>Bewust Kopen helpt</h2>
+                <p>
+                    Om het makkelijker te maken welke producten wel en niet geschikt zijn is er de Bewust Kopen <a href="/applicatie" title="Applicatie">app</a>. Hiermee zoek je makkelijk op welke ingrediënten wel of niet geschikt zijn. Ook kun je nog niet geïndexeerde producten toevoegen zodat je ook anderen vegetariërs helpt bij het zoeken naar het juiste product.
+                </p>
+            </div>
+            <div id="utilities">
+                <button type="button" class="button button-default print-button" onclick="window.print();">Print</button>
             </div>
             <footer>
                 <div class="footer-item">
-                    <a href="sitemap.html" title="sitemap">Sitemap</a>
+                    <ul>
+                        <li><a href="sitemap.html" title="Sitemap">Sitemap</a></li>
+                        <li><a href="/cookies" title="Cookies">Sitemap</a></li>
+                        <li><a href="#" title="Print" onclick="window.print();">Deze pagina printen</a></li>
+                    </ul>
                 </div>
                 <div class="footer-item">
                     <p class="copyright">
@@ -130,8 +152,14 @@ and open the template in the editor.
         <div id="cookie-notice">
             <p>
                 Deze website maakt gebruikt van cookies. <a href="cookies.html" title="Cookie beleid">Lees meer</a> over waar cookies worden gebruikt. 
-                <button type="button" class="button button-primary" onclick="hide('cookie-notice');">Ik snap het</button>
+                <button type="button" class="button button-primary" onclick="hide('cookie-notice'); setCookieSetting(1);">Ik snap het</button>
             </p>
         </div>
+        <script type="text/javascript">
+            (function () {
+                var carousel = new Carousel('photocarousel-wrapper');
+                carousel.rotate(5000);
+            })();
+        </script>
     </body>
 </html>
