@@ -15,34 +15,29 @@
         <div id="wrapper">
             <nav id="menu">
                 <div class="menu-item logo">
-                    <a href="index.html" title="Home">
+                    <a href="/" title="Home">
                         <img src="images/logo.png" alt="Logo" width="50">
                     </a>
                 </div>
-                <div class="menu-item title">
-                    <a href="index.html" title="home"><span class="brand-primary">Bewust</span> <span class="brand-secondary">Kopen</span></a>
-                </div>
-                <div class="menu-item title-mobile">
-                    <h2>Cookies</h2>
-                </div>
+                <div class="menu-item title"><a href="/" title="home"><span class="brand-primary">Bewust</span> <span class="brand-secondary">Kopen</span></a></div>
                 <div id="nav-buttons">
                     <div class="menu-item menu-button">
-                        <a href="index.html" title="Home">Home</a>
+                        <a class="active" href="/" title="Home">Home</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="app.html" title="Applicatie">Applicatie</a>
+                        <a href="/applicatie" title="Applicatie">Applicatie</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="about.html" title="Over ons">Over Ons</a>
+                        <a href="/over" title="Over ons">Over Ons</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="nutrition.html" title="Voeding">Voeding</a>
+                        <a href="/voeding" title="Voeding">Voeding</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="sponsor.html" title="Sponsoren">Sponsoren</a>
+                        <a href="/sponsors" title="Sponsoren">Sponsoren</a>
                     </div>
                     <div class="menu-item menu-button">
-                        <a href="contact.html" title="Contact">Contact</a>
+                        <a href="/contact" title="Contact">Contact</a>
                     </div>
                     <div class="menu-item search-box">
                         <input type="text" name="search" style="height: 60%; margin: 0 5px;" placeholder="Zoeken...">
@@ -66,7 +61,7 @@
                     <h2 class="title">Cookies</h2>
                 </div>
                 <div class="title-item">
-                    <p class="breadcrumb"><a href="index.html" title="Home">Home</a>-&gt;<a href="cookies.html" title="Cookies">Cookies</a></p>
+                    <p class="breadcrumb"><a href="/" title="Home">Home</a>-&gt;<a href="/cookies" title="Cookies">Cookies</a></p>
                 </div>
                 <button type="button" class="button button-default print-button" onclick="window.print();">Print</button>
             </div>
@@ -79,13 +74,17 @@
                 </p>
                 <h2>Kaarten</h2>
                 <p>
-                    Voor het weergeven van de kaart op de <a href="contact.html" title="Contact">contact</a> pagina maakt Bewust Kopen gebruikt van <a href="https://www.google.nl/maps" title="Google Maps">Google Maps</a>. Om deze kaart te kunnen gebruiken plaatst Google een cookie.<br>
+                    Voor het weergeven van de kaart op de <a href="/contact" title="Contact">contact</a> pagina maakt Bewust Kopen gebruikt van <a href="https://www.google.nl/maps" title="Google Maps">Google Maps</a>. Om deze kaart te kunnen gebruiken plaatst Google een cookie.<br>
                     De gegevens kunnen worden gebruikt door Google en indien ingelog met een Google account worden deze mogelijk ook gekoppeld.
                 </p>
             </div>
             <footer>
                 <div class="footer-item">
-                    <a href="sitemap.html" title="sitemap">Sitemap</a>
+                    <ul>
+                        <li><a href="sitemap.html" title="Sitemap">Sitemap</a></li>
+                        <li><a href="/cookies" title="Cookies">Cookies</a></li>
+                        <li><a href="#" title="Print" onclick="window.print();">Deze pagina printen</a></li>
+                    </ul>
                 </div>
                 <div class="footer-item">
                     <p class="copyright">
@@ -98,14 +97,14 @@
                         Prins Hendrikstraat 165<br>
                         4835PN, Breda<br>
                         06-12345678<br>
-                        <a href="mailto:info@bewustkopen.com" title="E-mail ons">info@bewustkopen.com</a><br>
+                        <a href="mailto:info@bewustkopen.nl" title="E-mail ons">info@bewustkopen.nl</a><br>
                     </p>
                 </div>
             </footer>
         </div>
         <div id="cookie-notice">
             <p>
-                Deze website maakt gebruikt van cookies. <a href="cookies.html" title="Cookie beleid">Lees meer</a> over waar cookies worden gebruikt. 
+                Deze website maakt gebruikt van cookies. <a href="/cookies" title="Cookie beleid">Lees meer</a> over waar cookies worden gebruikt. 
                 <button type="button" class="button button-primary" onclick="hide('cookie-notice'); setCookieSetting(1);">Ik snap het</button>
             </p>
         </div>

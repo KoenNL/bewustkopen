@@ -33,7 +33,7 @@
         </image:image>
     </url>
     <url> 
-        <loc>http://www.bewustkopen.com/over_ons</loc>
+        <loc>http://www.bewustkopen.com/over</loc>
         <image:image>
             <image:loc>http://www.bewustkopen.com/images/freek.jpg</image:loc>
             <image:caption>Een foto van medeoprichter Freek de Groen</image:caption>
@@ -55,7 +55,7 @@
         </image:image>
     </url>
     <url> 
-        <loc>http://www.bewustkopen.com/sponsoren</loc>
+        <loc>http://www.bewustkopen.com/sponsors</loc>
     </url>
     <url> 
         <loc>http://www.bewustkopen.com/contact</loc>
