@@ -33,24 +33,35 @@ function toggle(id) {
     return hide(id);
 }
 
+/**
+ * Check cookie setting and display cookie notice if
+ * @returns {Boolean}
+ */
 function checkCookieSetting() {
     var cookies = document.cookie.split(';');
     if (!cookies || cookies === null || cookies.length === 0) {
         show('cookie-notice');
         return false;
     }
-    cookies.forEach(function (index, value) {
-        if (value !== '' && value !== 0 && value.indexOf('accept_cookies=') && value.indexOf('=1')) {
+    for (var i = 0; i < cookies.length; i++) {
+       if (cookies[i] !== '' && cookies[i] !== 0 && cookies[i].indexOf('accept_cookies=1') > -1) {
             hide('cookie-notice');
             return true;
         }
-    });
+    }
+    
     show('cookie-notice');
     return false;
 }
 
+/**
+ * Set the 'accept_cookies' cookie.
+ * @param {string} setting value of the setting
+ * @returns {Boolean}
+ */
 function setCookieSetting(setting) {
     document.cookie = 'accept_cookies=' + setting;
+    return true;
 }
 
 /**
