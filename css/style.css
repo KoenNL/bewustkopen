@@ -326,6 +326,10 @@ footer {
     margin: auto;
 }
 
+footer ul {
+    list-style-type: none;
+}
+
 .copyright {
     font-style: italic;
 }
