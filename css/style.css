@@ -274,6 +274,11 @@ search-box form {
     box-shadow: 0 1px 5px #000000;
 }
 
+#content img.noborder {
+    border-radius: 0;
+    box-shadow: none;
+}
+
 #content a, .highlight a {
     color: #075503;
     white-space: nowrap;
