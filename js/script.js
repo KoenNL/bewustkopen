@@ -94,7 +94,7 @@ Carousel.prototype.animate = function (item, destination, speed) {
             speed = speed / 2;
             end = true;
         }
-        if (initial_position > destination) { 
+        if (initial_position > destination) {
             position -= speed;
         } else {
             position += speed;
@@ -129,3 +129,44 @@ Carousel.prototype.rotate = function (interval) {
         }
     }, interval);
 };
+
+/**
+ * Get params from the URI
+ * @returns {Array}
+ */
+function getParamsFromURI() {
+
+    var uri = window.location.search.substring(1);
+    var values = uri.split("&");
+    var params = [];
+
+    for (i = 0; i < values.length; i++) {
+        value = values[i].split("=");
+        params[value[0]] = value[1];
+    }
+
+    return params;
+}
+
+/**
+ * Get the values from the URI and set the value of the element with the given id
+ * @param {string} id Id of element to set the id to
+ * @returns {Boolean} True on success, false on failure.
+ */
+function setValueFromURI(id) {
+    var params = getParamsFromURI();
+
+    if (!params) {
+        return false;
+    }
+
+    var element = document.getElementById(id);
+    var name = element.getAttribute('name');
+
+    if (!params[name]) {
+        return false;
+    }
+
+    element.value = params[name];
+    return true;
+}

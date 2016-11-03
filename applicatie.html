@@ -41,7 +41,10 @@
                         <a href="/contact" title="Contact">Contact</a>
                     </div>
                     <div class="menu-item search-box">
-                        <input type="text" name="search" style="height: 60%; margin: 0 5px;" placeholder="Zoeken...">
+                        <form action="zoeken.html" method="get">
+                            <input type="text" id="search" name="q" placeholder="Zoeken...">
+                            <input class="hidden" type="submit" value="zoeken">
+                        </form>
                     </div>
                     <div id="social-wrapper">
                         <a class="social-icon" href="https://www.facebook.com/bewustkopen" target="_blank">
@@ -62,7 +65,7 @@
                     <h2 class="title">Applicatie</h2>
                 </div>
                 <div class="title-item">
-                    <p class="breadcrumb"><a href="/" title="Home">Home</a>-&gt;<a href="/applicatie" title="Applicatie">Cookies</a></p>
+                    <p class="breadcrumb"><a href="/" title="Home">Home</a>-&gt;<a href="/applicatie" title="Applicatie">Applicatie</a></p>
                 </div>
                 <button type="button" class="button button-default print-button" onclick="window.print();">Print</button>
             </div>
